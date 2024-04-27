@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/admin-panel.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>admin panel</title>
-</head>
-<body>
-  <header>
-    <div class="container">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/admin-panel.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>admin panel</title>
+	</head>
+  <div class="container"> 
+
+    <div class="content">
+      
       <div class="header">
-        <h1 class="title">Hexflix</h1>
+        <h1 class="title"><a href="index.html">Hexflix</a></h1>
         <h1 class="header-text">ADMIN PANEL</h1>
       </div>
-
-      <div class="panel">
-        <p class="panel-text">Название</p>
-      <input class="panel-input" type="text">
+      <form action=" ">
+        <div class="panel-bg">
   
-
-
-
-
-      <button class="panel-button" type="submit">Отправить</button>
-      </div>
+          <div class="panel">
+            
+            <p class="panel-text">Название</p>
+            <input class="panel-input" type="text" />
+  
+            <p class="panel-text">Описание</p>
+            <input class="panel-input panel-description" type="text" />
+  
+            <p class="panel-text">Ссылка на фильм</p>
+            <input class="panel-input" type="text" />
+  
+            <p class="panel-text">Год, длительность, страна</p>
+            <input class="panel-input" type="text" />
+  
+            <p class="panel-text">Жанр</p>
+            <input class="panel-input" type="text" />
+  
+            <button class="panel-button button-submit" type="submit">Отправить
+              <input class="panel-button button-reset" type="reset">
+            </button>
+          </div>
+        </div>
       
+    </form>
     </div>
-  </header>
-</body>
+
+   
+
+    </div>
+
+
+	</body>
+	<script>
+	</script>
 </html>
