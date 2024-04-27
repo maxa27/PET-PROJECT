@@ -7,7 +7,9 @@
 }
 
 body {
-  background-color: #000;
+  overflow: hidden;
+  height: 100vh;
+  background-size: cover;
 }
 
 .header {
@@ -30,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: red;
+    color: #ff4c4c;
     margin-top: 40px;
     padding-right: 110px;
     font-weight: 500 ;
@@ -41,35 +43,69 @@ body {
   height: 120px;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 20px;
-}
-
 .panel {
   padding: 60px;
   color: #fff;
   font-size: 20px;
 }
 
-.panel-input {
-  height: 30px;
-  width: 250px;
-  border-radius: 15px;
-  border: none;
+.panel-bg {
+  background-color: #333;
+  width: 730px;
+  margin: 60px;
+  height: 840px;
+  border-radius: 20px;
 }
 
-.panel-text {
-  padding-left: 70px;
+.panel-input {
+  height: 40px;
+  width: 600px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
 }
+
 
 .panel-button {
   border-radius: 20px;
   border: none;
-  height: 30px;
-  width: 250px;
+  height: 40px;
+  width: 600px;
   font-weight: 500;
   background-color: #fff;
   cursor: pointer;
+  margin-top: 50px;
+}
+
+.panel-text {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.panel-description {
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-submit {
+  padding-top: 12px;
+  background-color: #3bda78;
+  color: white;
+}
+
+.button-reset {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.container {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  height: 100vh;
 }
