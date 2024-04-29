@@ -47,26 +47,30 @@ body {
   padding: 60px;
   color: #fff;
   font-size: 20px;
+  width: 31vw;
 }
 
 .panel-bg {
-  /* background-color: #333; */
   background-color: rgba(47, 47, 47, 0.7);
-  width: 713px;
+  width: 31vw;
   margin: 60px;
   margin-left: 35%;
-  height: 820px;
   border-radius: 20px;
 }
 
 .panel-input {
-  height: 40px;
-  width: 600px;
+  height: 3vh;
+  width: 26vw;
   border-radius: 10px;
   border: none;
   cursor: text;
   font-size: 20px;
   resize: none;
+}
+
+.panel-input:hover {
+  transition: 2s;
+  background-color: #cdcdcd;
 }
 
 
@@ -88,7 +92,8 @@ body {
 }
 
 .panel-description {
-  height: 100px;
+  height: 8vh;
+  width: 26vw;
   border-radius: 10px;
   border: none;
   font-size: 20px;
@@ -106,10 +111,12 @@ a {
   color: white;
   text-align: center;
   padding-bottom: 20px;
+  width: 26vw;
 }
 
 .button-reset {
   background-color: #ff4c4c;
+  width: 26vw;
   color: white;
 }
 
@@ -117,4 +124,14 @@ a {
   background: url(../images/bg.jpg);
   background-size: cover;
   height: 100vh;
+}
+
+.button-submit:hover {
+  transition: 0.7s;
+  background-color: #2d9a57;
+}
+
+.button-reset:hover {
+  transition: 0.7s;
+  background-color: #b53737;
 }
