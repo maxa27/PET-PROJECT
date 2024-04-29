@@ -53,7 +53,7 @@ body {
   background-color: #333;
   width: 730px;
   margin: 60px;
-  height: 840px;
+  height: 820px;
   border-radius: 20px;
 }
 
@@ -62,9 +62,9 @@ body {
   width: 600px;
   border-radius: 10px;
   border: none;
-  display: flex;
-  cursor: pointer;
+  cursor: text;
   font-size: 20px;
+  resize: none;
 }
 
 
@@ -76,7 +76,8 @@ body {
   font-weight: 500;
   background-color: #fff;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .panel-text {
@@ -86,6 +87,10 @@ body {
 
 .panel-description {
   height: 100px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  resize: none;
 }
 
 a {
@@ -97,6 +102,8 @@ a {
   padding-top: 12px;
   background-color: #3bda78;
   color: white;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .button-reset {
