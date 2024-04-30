@@ -20,29 +20,34 @@
         <h1 class="title"><a href="index.html">Hexflix</a></h1>
         <h1 class="header-text">ADMIN PANEL</h1>
       </div>
-      <form action=" ">
+      <form action=" " id="form">
         <div class="panel-bg">
   
           <div class="panel">
 
             <p class="panel-text">Название</p>
             <textarea  class="panel-input" id="name" rows="2" cols="25"></textarea>
+            <span style="color: red;" id="name_error"></span>
 
             <p class="panel-text">Описание</p>
             <textarea  class="panel-description panel-input" id="description" rows="5" cols="48"></textarea>
+            <span style="color: red;" id="description_error"></span>
 
             <!-- <input class="panel-input panel-description" type="text" /> -->
   
             <p class="panel-text">Ссылка на фильм</p>
             <textarea  class="panel-input" id="link" rows="5" cols="150"></textarea>
+            <span style="color: red;" id="link_error"></span>
             <!-- <input class="panel-input" type="text" /> -->
   
             <p class="panel-text">Год, длительность, страна</p>
             <textarea  class="panel-input" id="extra-info" rows="5" cols="50"></textarea>
+            <span style="color: red;" id="extra_info_error"></span>
             <!-- <input class="panel-input" type="text" /> -->
   
             <p class="panel-text">Жанр</p>
             <textarea  class="panel-input" id="genre" rows="5" cols="50"></textarea>
+            <span style="color: red;" id="genre_error"></span>
             <!-- <input class="panel-input" type="text" /> -->
   
             <button class="panel-button button-submit" 
@@ -59,6 +64,6 @@
 
     </div>
 
-    <script src="../js/adminPanel.js"></script>
 	</body>
+  <script type="module" src="../js/adminPanel.js"></script>
 </html>
