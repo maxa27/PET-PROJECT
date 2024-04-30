@@ -54,9 +54,10 @@ body {
   background-color: rgba(47, 47, 47, 0.7);
   width: 31vw;
   margin: 60px;
-  margin-left: 35%;
   border-radius: 20px;
+  margin-left: 35.5%;
 }
+
 
 .panel-input {
   height: 3vh;
@@ -89,6 +90,7 @@ body {
 .panel-text {
   margin-top: 20px;
   padding-bottom: 10px;
+  color: #fff;
 }
 
 .panel-description {
@@ -135,3 +137,4 @@ a {
   transition: 0.7s;
   background-color: #b53737;
 }
+
