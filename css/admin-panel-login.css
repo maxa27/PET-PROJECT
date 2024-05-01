@@ -52,8 +52,7 @@ a {
 .container {
   background: url(../images/bg.jpg);
   background-size: cover;
-  height: 70em;
-  width: 100%;
+  height: 100vh;
 }
 
 .panel-text {
