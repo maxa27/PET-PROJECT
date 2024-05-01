@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-weight: 200;
+	font-weight: 400;
 	padding: 0;
 	margin: 0;
   font-family: Montserrat;
@@ -8,8 +8,7 @@
 
 body {
   overflow: hidden;
-  height: 100vh;
-  background-size: cover;
+  height: 100%;
 }
 
 .header {
@@ -20,76 +19,76 @@ body {
 }
 
 .title {
-  padding-left: 60px;
+  padding-left: 3.5%;
   display: flex;
   align-items: center;
   color:#fff;
 }
 
 .header-text {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ff4c4c;
-    margin-top: 40px;
-    padding-right: 110px;
-    font-weight: 500 ;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff4c4c;
+  margin-top: 2.5%;
+  padding-right: 9%;
+  font-weight: 300;
 }
 
 .header {
   background-color: #333;
-  height: 120px;
+  height: 8em;
 }
 
 .panel {
-  padding: 60px;
+  padding: 10%;
   color: #fff;
-  font-size: 20px;
+  font-size: 1em;
   width: 31vw;
 }
 
 .panel-bg {
   background-color: rgba(47, 47, 47, 0.7);
-  width: 31vw;
-  margin: 60px;
+  width: 32.5%;
+  margin: 1%;
   border-radius: 20px;
   margin-left: 35.5%;
 }
 
 
 .panel-input {
-  height: 3vh;
+  height: 2em;
   width: 26vw;
   border-radius: 10px;
   border: none;
   cursor: text;
-  font-size: 20px;
+  font-size: 1em;
   resize: none;
 }
 
 .panel-input:hover {
-  transition: 2s;
+  transition: 1s;
   background-color: #cdcdcd;
+  color: #333;
 }
 
 
 .panel-button {
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
-  height: 40px;
-  width: 600px;
-  font-weight: 500;
+  height: 2em;
+  width: 100%;
+  font-weight: 400;
   background-color: #fff;
   cursor: pointer;
-  margin-top: 30px;
-  text-align: center;
+  margin-top: 5%;
 }
 
 .panel-text {
-  margin-top: 20px;
-  padding-bottom: 10px;
+  margin-top: 3%;
+  padding-bottom: 2%;
   color: #fff;
 }
 
@@ -98,7 +97,7 @@ body {
   width: 26vw;
   border-radius: 10px;
   border: none;
-  font-size: 20px;
+  font-size: 1em;
   resize: none;
 }
 
@@ -108,18 +107,25 @@ a {
 }
 
 .button-submit {
-  padding-top: 12px;
+  display: flex;
+  justify-content: center;
   background-color: #3bda78;
   color: white;
   text-align: center;
-  padding-bottom: 20px;
   width: 26vw;
+  padding-top: 3%;
+  height: 3em;
 }
 
 .button-reset {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
   background-color: #ff4c4c;
   width: 26vw;
-  color: white;
+  padding-top: 3%;
+  height: 3em;
 }
 
 .container {
