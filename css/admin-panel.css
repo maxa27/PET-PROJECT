@@ -84,6 +84,7 @@ body {
   background-color: #fff;
   cursor: pointer;
   margin-top: 5%;
+  text-align: center;
 }
 
 .panel-text {
@@ -109,23 +110,26 @@ a {
 .button-submit {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #3bda78;
   color: white;
-  text-align: center;
   width: 26vw;
   padding-top: 3%;
   height: 3em;
+  padding-bottom: 0.8em;
 }
 
 .button-reset {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
   background-color: #ff4c4c;
   width: 26vw;
   padding-top: 3%;
   height: 3em;
+  padding-bottom: 0.8em;
 }
 
 .container {
