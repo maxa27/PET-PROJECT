@@ -32,9 +32,10 @@ body {
   flex-direction: column;
   align-items: center;
   color: #ff4c4c;
-  margin-top: 2.5%;
+  margin-top: 1.4em;
   padding-right: 9%;
   font-weight: 300;
+  padding-left: 3.5%;
 }
 
 .header {
@@ -147,4 +148,5 @@ a {
   transition: 0.7s;
   background-color: #b53737;
 }
+
 
