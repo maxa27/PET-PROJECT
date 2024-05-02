@@ -134,7 +134,7 @@ a {
 }
 
 .container {
-  background: url(../images/bg.jpg);
+  background: url(../images/bg\(dark\).jpg);
   background-size: cover;
   height: 100vh;
 }
