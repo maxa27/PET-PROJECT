@@ -32,7 +32,7 @@ document.querySelector("form").addEventListener('click', (e) => {
 
   if (isValid) {
     // Проверка логина и пароля
-    if (email === "admin@mail.ru" && password === "admin1234") {
+    if (email === "admin@mail.ru" && password === "adminPanel52") {
         window.location.href = "../html/admin-panel.html";
     } else {
         alert("Неправильный логин или пароль!");
