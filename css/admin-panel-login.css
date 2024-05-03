@@ -52,7 +52,7 @@ a {
 .container {
   background: url(../images/bg\(dark\).jpg);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .panel-text {
@@ -98,6 +98,7 @@ a {
   width: 6em;
   height: 6em;
   border-radius: 50%;
+  background-size: contain;
 }
 
 .login {
