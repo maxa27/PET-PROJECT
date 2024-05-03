@@ -26,17 +26,22 @@
       <div class="login-bg">
 
         <div class="login">
-          <img src="../images/admin-avatar.jpg" alt="avatar" class="avatar-img">
+          <form action="" id="form">
+
+            <img src="../images/admin-avatar.jpg" alt="avatar" class="avatar-img">
     
-          <p class="panel-text">Логин</p>
-          <input class="login-input" id="login" type="email">
-
-          <p class="panel-text">Пароль</p>
-          <input class="login-input" id="password" type="password">
-          <br>
-          <a href="admin-panel.html"><button class="login-button" id="login-btn" type="submit">Вход</button></a>
+            <p class="panel-text">Логин</p>
+            <input class="login-input" id="login" type="email">
+            <span style="color: rgb(255, 72, 72);" id="login_error"></span>
+  
+            <p class="panel-text">Пароль</p>
+            <input class="login-input" id="password" type="password">
+            <span style="color: rgb(255, 72, 72);" id="password_error"></span>
+            <br>
+           <button class="login-button" id="login-btn" type="button">Вход</button>
+          </div>
         </div>
-      </div>
-
+          </form>
+<script src="../js/adminPanelLogin.js"></script>
 </body>
 </html>
