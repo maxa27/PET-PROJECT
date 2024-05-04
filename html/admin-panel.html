@@ -10,6 +10,7 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<title>admin panel</title>
 	</head>
   <div class="container"> 
@@ -19,8 +20,12 @@
       <div class="header">
 
         <h1 class="title"><a href="index.html">Hexflix</a></h1>
+
         <h1 class="header-text">ADMIN PANEL</h1>
+        <img class="admin-img" src="../images/admin-avatar.jpg" alt="admin-avatar">
+        <p class="user-text">Admin<br><a href="admin-panel-login.html">Выйти</a></p>
       </div>
+      
 
       <form action=" " id="form">
 
@@ -30,33 +35,33 @@
 
             <p class="panel-text">Название</p>
       
-            <textarea  class="panel-input" id="name" rows="2" cols="25"></textarea>
+            <input  class="panel-input" id="name" rows="2" cols="25" placeholder="Thor: Ragnarok"></input>
             <span style="color: red;" id="name_error"></span>
 
             <p class="panel-text">Описание</p>
-            <textarea  class="panel-description panel-input" id="description" rows="5" cols="48"></textarea>
+            <textarea  class="panel-description panel-input" id="description" rows="5" cols="48" placeholder="Тор: Рагнарек (2017) - это американский фильм, основанный на персонаже Торе. Режиссер фильма - Тайка Вайтити ..."></textarea>
             <span style="color: red;" id="description_error"></span>
 
             <!-- <input class="panel-input panel-description" type="text" /> -->
   
             <p class="panel-text">Ссылка на фильм</p>
-            <textarea  class="panel-input" id="link" rows="5" cols="150"></textarea>
+            <input  class="panel-input" id="link" rows="5" cols="150" placeholder="https://www.hexflix.ru/film/Thor-Ragnarok/"></inpu>
             <span style="color: red;" id="link_error"></span>
             <!-- <input class="panel-input" type="text" /> -->
   
             <p class="panel-text">Год, длительность, страна</p>
-            <textarea  class="panel-input" id="extra-info" rows="5" cols="50"></textarea>
+            <input  class="panel-input" id="extra-info" rows="5" cols="50" placeholder="2017, 130 мин, США"></input>
             <span style="color: red;" id="extra_info_error"></span>
             <!-- <input class="panel-input" type="text" /> -->
   
             <p class="panel-text">Жанр</p>
-            <textarea  class="panel-input" id="genre" rows="5" cols="50"></textarea>
+            <input  class="panel-input" id="genre" rows="5" cols="50" placeholder="фантастика"></input>
             <span style="color: red;" id="genre_error"></span>
             <!-- <input class="panel-input" type="text" /> -->
   
             <button class="panel-button button-submit" 
-            id="submit" type="submit">Добавить фильм</button>
-            <button class="panel-button button-reset" type="reset">Сбросить</button>
+            id="submit" type="submit">Добавить фильм <i class='bx bx-movie' ></i></button>
+            <button class="panel-button button-reset" type="reset">Сбросить <i class='bx bx-reset' ></i></button>
             </button>
           </div>
         </div>
