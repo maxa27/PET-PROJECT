@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     
@@ -21,14 +22,33 @@
           <a href="../html/first_page.html"><h1 class="name">HexFlix</h1></a>
             <button class="b1">Фильмы</button>
             <button  class="b2">Сериалы</button>
-            <div class="lupa"><img class="scrach" src="../images/searchh.png" alt="Scrach"></div>
+            <form>
+              <input type="text" placeholder="Искать здесь...">
+              <div class="lupa"><img class="scrach" src="../images/searchh.png" alt="Scrach"></div>
+            </form>
+            
         </div>
         
         
-        <div class="movies">
-            <a href="#" class="plaque-link"> <img class="img1" src="/images/1pi.jpg" alt="Movie 1"> </a>
-            <a href="#" class="plaque-link"><img class="img2" src="/images/5pi.jpg" alt="Movie 2"></a>
-            <a href="#" class="plaque-link"><img class="img3" src="/images/3pi.jpg" alt="Movie 3"></a>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#" class="plaque-link"> <img class="img1" src="/images/1pi.jpg" alt="Movie 1"> </a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img2" src="/images/5pi.jpg" alt="Movie 2"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img3" src="/images/3pi.jpg" alt="Movie 3"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"> <img class="img1" src="/images/1pi.jpg" alt="Movie 1"> </a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img2" src="/images/5pi.jpg" alt="Movie 2"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img3" src="/images/3pi.jpg" alt="Movie 3"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"> <img class="img1" src="/images/1pi.jpg" alt="Movie 1"> </a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img2" src="/images/5pi.jpg" alt="Movie 2"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img3" src="/images/3pi.jpg" alt="Movie 3"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"> <img class="img1" src="/images/1pi.jpg" alt="Movie 1"> </a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img2" src="/images/5pi.jpg" alt="Movie 2"></a></div>
+            <div class="swiper-slide"><a href="#" class="plaque-link"><img class="img3" src="/images/3pi.jpg" alt="Movie 3"></a></div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
         <h2 class="h2">Жанры</h2>
         <div class="genres">
@@ -76,4 +96,6 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/Swiper.js"></script>
 </html>
