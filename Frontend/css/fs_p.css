@@ -10,21 +10,19 @@
   }
 
 * {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 @font-face {
 	font-family: 'Noto'; 
-	src: url(../fonts/NotoSans/NotoSans-Regular.ttf); 
+	src: url(../fonts/NotoSans/NotoSans-Bold.ttf); 
 }
 
 
 body {
     background-color: rgb(0, 0, 0);
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-    
 }
 
 .header {
@@ -129,6 +127,7 @@ img:hover {
     margin-top: 8%;
     color: white;
     font-family: 'Noto';
+    font-weight: bolder;
 }
 
 .name {
@@ -147,24 +146,24 @@ img:hover {
 .movies_end{
     width: 85%;
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
     grid-gap: 10px;
     grid-row-gap: 20px; 
     grid-column-gap: 20px; 
     margin-left: 8%;
     margin-top: 2%;
-    margin-bottom: 30%;
-    
+    margin-bottom: 37%;
 }
 
     
 .h2 {
     color: white;
     margin-left: 7%;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: 2vw;
     margin-bottom: 1vw;
-    font-family: 'Noto';
+    font-family: Montserrat;
+    font-weight: 700;
 }
 
 .plaque-button {
@@ -175,7 +174,10 @@ img:hover {
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    
+}
+
+.plaque-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .plaque-text {
     font-size: 1vw;
@@ -183,6 +185,7 @@ img:hover {
 }
 
 .lupa {
+    cursor: col-resize;
     position: absolute;
     width: 9%;
     height:2%;
@@ -196,9 +199,9 @@ img:hover {
 
 .b1, .b2 {
     margin-left: 1vw;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.8vw;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Montserrat';
     padding: 5px 10px;
     background-color: transparent;
     color: white;
@@ -265,24 +268,163 @@ input {
   right: 0;
   z-index: 2;
   color: white;
-  
+  cursor: pointer;
 
 }
 input:focus {
   width: 300px;
   z-index: 1;
   border-bottom: 2px solid #ffffff;
+  cursor: text;
 }
 
-.plaque {
+/* .plaque {
     margin-right: 50%;
     padding-bottom: 10%;
-}
+} */
 
 .imge {
-    width: 200%;
+    width: 100%;
 }
 
 /* form , input {
     margin-left: 30%;
 } */
+
+.search {
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;  
+    margin-top: 20%;
+}
+
+.card {
+    position: relative;
+    width: 23%;
+    height: 19%;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .5s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    opacity: .6;
+}
+
+.details .tags {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .85em;
+}
+
+.details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+footer {
+    margin-top: 10%;
+    height: 12%;
+    width: 100%;
+    z-index: 4;
+    background-color: rgba(47, 47, 47, 0.3);
+    color: rgb(91, 91, 91);
+    padding-top: 0.6%;
+    text-align: center;
+    font-weight: 700;
+}

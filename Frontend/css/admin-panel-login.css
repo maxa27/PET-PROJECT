@@ -40,8 +40,8 @@ body {
 }
 
 .header {
-  background-color: #333;
-  height: 8em;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 7em;
 }
 
 a {
