@@ -131,9 +131,6 @@ img:hover {
     font-weight: bolder;
 }
 
-.plaque-text:hover {
-    background-color: rgba(29, 29, 29, 0.5);
-}
 
 .name {
     margin-left: 1.5em;
