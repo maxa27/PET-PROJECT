@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexfilx - Логин</title>
-  <link rel="stylesheet" href="../css/admin-panel-login.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/admin-panel-login.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"/>
-      <link rel="icon" type="image/png" href="../images/web-icon.ico">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  <div class="container"> 
+			rel="stylesheet"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="../images/web-icon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<title>Hexflix - Login</title>
+	</head>
+	<body>
+		<div class="alert hide">
+			<span class="fas fa-exclamation-circle"></span>
+			<span class="msg">Не правильный логин или пароль!</span>
+			<div class="close-btn">
+				<span class="fas fa-times"></span>
+			</div>
+		</div>
 
-    <div class="content">
-      
-      <div class="header">
+		<header>
+			<div class="head">
+				<div class="logo">
+					<img src="../images/web-icon.ico" alt="logo" />
+					<h2 class="logo-title">
+						<span><a href="../html/admin-panel-login.html">Login</a></span>
+					</h2>
+				</div>
+			</div>
+		</header>
 
-        <h1 class="title"><a href="index.html">Hexflix</a></h1>
-        <h1 class="header-text">ADMIN PANEL</h1>
-      </div>
+		<form id="form" action="">
+			<h1 class="input-text">Вход</h1>
+			<div class="input__log">
+				<i class="bx bxs-user input__user"></i>
 
-      <div class="login-bg">
+				<input
+					type="email"
+					placeholder="Логин"
+					class="input__login"
+					id="input-login"
+				/>
+			</div>
 
-        <div class="login">
-          <form action="" id="form">
+			<div class="input">
+				<div class="input__overlay" id="input-overlay"></div>
 
-            <img src="../images/user-img.svg" alt="avatar" class="admin-img">
-    
-            <p class="panel-text">Логин <i class='bx bx-user' ></i></p>
-            <input class="login-input" id="login" type="email" placeholder="Введите логин">
-            <span style="color: rgb(255, 72, 72);" id="login_error"></span>
-  
-            <p class="panel-text">Пароль <i class='bx bx-lock-alt' ></i></p>
-            <input class="login-input" id="password" type="password" placeholder="Введите пароль">
-            <span style="color: rgb(255, 72, 72);" id="password_error"></span>
-            <br>
-           <button class="login-button" id="login-btn" type="button">Вход <i class='bx bxs-log-in' ></i></button>
-          </div>
-        </div>
-          </form>
-<script src="../js/adminPanelLogin.js"></script>
-</body>
+				<i class="bx bx-lock-alt input__lock"></i>
+
+				<input
+					type="password"
+					class="input__password"
+					placeholder="Пароль..."
+					id="input-pass"
+				/>
+
+				<i class="bx bx-hide input__icon" id="input-icon"></i>
+			</div>
+			<button class="login-button" id="login-btn" type="button">Вход</button>
+		</form>
+	</body>
+	<script src="../js/adminPanelLogin-alert.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../js/new-admin-panel-login.js"></script>
+	<script src="../js/adminPanelLoginValidation.js"></script>
 </html>

@@ -1,87 +1,172 @@
+:root {
+	--first-color: hsl(0, 0%, 22%);
+	--text-color: hsl(232, 8%, 25%);
+	--white-color: hsl(232, 100%, 99%);
+	--body-color: hsl(232, 45%, 90%);
+	--container-color: hsl(0, 0%, 21%);
+	--font: 'Montserrat';
+}
+
 * {
 	box-sizing: border-box;
-	font-weight: 400;
-	padding: 0;
-	margin: 0;
-  font-family: Montserrat;
+	font-family: var(--font);
 }
 
 body {
-  overflow: hidden;
-  height: 100vh;
-  background-size: cover;
+	margin: 0;
+  display: grid;
+  place-items: center;
+  background-color: #262626;
+  overflow: hidden
+  /* background-color: hsl(0, 0%, 10%) */
+  /* background-image: url('../images/mainbg.jpg') */
 }
 
-.header {
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-}
-
-.title {
-  padding-left: 3.5%;
+.input {
+  margin-top: 6%;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.35rem 1.25rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
-  color:#fff;
+  column-gap: 0.75rem;
 }
 
-.header-text {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ff4c4c;
-  margin-top: 1.4em;
-  padding-right: 9%;
-  font-weight: 300;
-  padding-left: 3.5%;
-}
-
-.header {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 7em;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.container {
-  background: url(../images/bg\(dark\).jpg);
-  background-size: cover;
-  height: 100%;
-}
-
-.panel-text {
-  margin-top: 4%;
-  padding-bottom: 3%;
-  color: #fff;
-  text-align: left;
-}
-
-.login-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#form {
+  text-align: center;
+  width: 320px;
+  height: 320px;
+  /* margin: 25vh auto 0 auto; */
+  margin-top: 25vh;
+  margin-left: 2vh;
+  padding: 20px;
   background-color: rgba(47, 47, 47, 0.7);
-  width: 32%;
-  height: 28em;
-  margin-left: 35%;
-  margin-top: 4%;
-  border-radius: 20px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+
+.input__lock,
+.input__icon {
+  font-size: 1.25rem;
+  z-index: 1;
+}
+
+.input__lock,
+.input__password {
+  color: var(--white-color);
+}
+
+.input__icon {
+  color: var(--first-color);
+  cursor: pointer;
+  padding-left: 14px;
+}
+
+.input__password {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  z-index: 1;
+}
+.input__password::placeholder {
+  color: rgb(152, 152, 152) ;
+}
+
+.input__overlay {
+  background-color: var(--white-color);
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 1rem;
+  border-radius: 50%;
+  z-index: 0;
+  transition: .4s;
+}
+
+.overlay-content {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  right: 0;
+}
+
+.overlay-content ~ .input__lock {
+  color: var(--container-color);
+}
+
+.overlay-content ~ .input__password,
+.overlay-content ~ .input__password::placeholder {
+  color: #0a0a0a;
+}
+
+header {
+  background-color: var(--container-color);
+  /* backdrop-filter: blur(20px); */
+	width: 100%;
+	/* border: solid 1px #fff; */
+	text-align: center;
+}
+
+header h1 {
+	color: white;
+	font-weight: 200;
+	font-family: 'Montserrat';
+}
+
+.input__bg.input.input__overlay {
+  color: var(--container-color);
+}
+
+.input__user {
+  font-size: 1.25rem;
+}
+
+.input__user,
+.input__password {
+  color: var(--white-color);
+}
+
+.input__login {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  z-index: 1;
+  color: var(--white-color);
+}
+
+.input__login::placeholder {
+  color: rgb(152, 152, 152) ;
+}
+
+
+.input__log {
+  background-color: var(--container-color);
+  padding: 1.35rem 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  text-align: center;
+}
+
+
+.input-text {
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 800;
 }
 
 .login-button {
-  margin-top: 2%;
+  margin-top: 8%;
   width: 100%;
-  height: 2.5em;
+  height: 3.5em;
   border: none;
   border-radius: 10px;
   color: #fff;
-  background-color: #3bda78;
+  background-color: #2d9a57;
   cursor: pointer;
   font-weight: 600;
   cursor: pointer;
@@ -89,28 +174,122 @@ a {
 
 .login-button:hover {
   transition: 1.2s;
-  background-color: #2d9a57;
+  background-color: #525252;
   color: #fff;
 }
 
-
-.login-input {
-  display: flex;
-  border: none;
-  border-radius: 8px;
-  width: 20vw;
-  height: 2em;
-  font-size: 1em;
-  padding: 1em;
-  border: none;
-}
-
-.admin-img {
-  width: 6em;
-  height: 6em;
-  border-radius: 50%;
-}
-
-.login {
+.header__logo-img {
   text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.header-text-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.head .logo {
+	color: #000;
+	display: flex;
+	align-items: center;
+}
+
+.head .logo img {
+	width: 40px;
+}
+
+.logo-title a {
+	color: var(--white-color);
+	text-decoration: none;
+}
+
+.alert{
+  background: #ff9b9b;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  border-radius: 4px;
+  border-left: 8px solid #ff0202;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.alert.showAlert{
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert.show{
+  animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+  0%{
+    transform: translateX(100%);
+  }
+  40%{
+    transform: translateX(-10%);
+  }
+  80%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+.alert.hide{
+  animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+  0%{
+    transform: translateX(-10px);
+  }
+  40%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(-10%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+.alert .fa-exclamation-circle{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ce0000;
+  font-size: 30px;
+}
+.alert .msg{
+  padding: 0 20px;
+  font-size: 18px;
+  color: #ce0000;
+}
+.alert .close-btn{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff8080;
+  padding: 20px 18px;
+  cursor: pointer;
+}
+.alert .close-btn:hover{
+  background: #ff6666;
+}
+.alert .close-btn .fas{
+  color: #ce0000;
+  font-size: 22px;
+  line-height: 40px;
 }
