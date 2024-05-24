@@ -16,6 +16,14 @@
   width: 0;
 }
 
+* {
+  font-family: 'Montserrat';
+}
+@font-face {
+font-family: 'Noto'; 
+src: url(../fonts/NotoSans/NotoSans-Bold.ttf); 
+}
+
 
 
 .header {

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "nodemon Server.js"
+  },
+  "watch": [
+    "."
+  ],
+  "ext": "js,json,html,css,ts"
+}
