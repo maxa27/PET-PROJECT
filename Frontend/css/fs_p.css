@@ -265,9 +265,9 @@ form {
     margin-left: 49vw;
   }
   input {
-    height: 30px;
+    height: 35px;
     width: 0;
-    padding: 0 20px 0 1px;
+    padding: 0 42px 0 15px;
     border: none;
     border-bottom: 2px solid transparent;
     outline: none;
@@ -279,9 +279,8 @@ form {
     z-index: 2;
     color: white;
     cursor: pointer;
-    margin-right: 15%;
-}
   
+  }
   input:focus {
     width: 300px;
     z-index: 1;

@@ -34,20 +34,21 @@ body::-webkit-scrollbar {
   font-weight: 400;
   margin-top: 1%;
   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .b1, .b2 {
   margin-left: 1vw;
   font-weight: 700;
-  font-size: 0.8vw;
-  font-family: 'Montserrat';
+  font-size: 1em;
   padding: 5px 10px;
   background-color: transparent;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
- font-family: var(--font);
+  font-family: var(--font);
 }
 
 .lupa {
@@ -70,34 +71,138 @@ form {
   width: 300px;
   margin: 0 auto;
   height: 35px;
-  margin-left: 49vw;
+  margin-left: 55%;
+  /* margin-right: 25%; */
 }
 
 input {
-  height: 30px;
-  width: 0;
-  padding: 0 20px 0 1px;
+  height: 35px;
+  width: 100%;
+  opacity: 0;
+  padding: 0 42px 0 15px;
   border: none;
   border-bottom: 2px solid transparent;
   outline: none;
   background: transparent;
-  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.2s;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
   color: white;
   cursor: pointer;
-  margin-right: 15%;
 }
 
 input:focus {
+  opacity: 1;
   width: 300px;
   z-index: 1;
   border-bottom: 2px solid #ffffff;
   cursor: text;
-  margin-right: 18%;
+  margin-right: 25%;
 }
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    margin-left: 2%;
+    width: 96%;
+    padding: 10px;
+  }
+
+  .b1, .b2 {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+  .lupa {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-top: 0;
+    right: 20px;
+  }
+
+  form {
+    width: 100%;
+    margin: 10px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  input:focus {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .b1, .b2 {
+    font-size: 0.9em;
+    padding: 5px 8px;
+  }
+
+  .lupa {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    right: 20px;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .b1, .b2 {
+    font-size: 0.8em;
+    padding: 5px 5px;
+  }
+
+  .lupa {
+    width: 15px;
+    height: 15px;
+    margin-left: auto;
+    right: 10px;
+  }
+
+  form {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  input:focus {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 
 .name {
   margin-left: 1.5em;
@@ -122,25 +227,56 @@ img {
   width: 100%;
   border-radius: 10px;
 }
-
+/* 
 .grid-container-bg {
   background-color: rgba(46, 46, 46, 0.6);
   border-radius: 25px;
-  height: 135vh;
+  height: 145vh;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
+  z-index: 2;
 }
 
 .grid-container {
   display: grid;
+  grid-template-rows: minmax(100px, 1fr)  minmax(100px, 1fr)  minmax(100px, 1fr);
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   row-gap: 25px;
   column-gap: 20px;
   margin-top: 2%;
+} */
+
+.grid-container-bg {
+  background-color: rgba(46, 46, 46, 0.6);
+  border-radius: 25px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.movie_link {
+  white-space: nowrap;
+  text-align: center;
+}
+.movie_link img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .grid-container img {
@@ -153,10 +289,6 @@ img {
   box-shadow: 0 0 10px 5px #ffffff;
 }
 
-.movie_link {
-  white-space: nowrap;
-  text-align: center;
-}
 
 .genre-title {
   color: white;
@@ -170,7 +302,8 @@ img {
   margin-left: 10%;
   margin-top: 2%;
   font-weight: 600;
-}
+  pointer-events: none;
+} 
 
 .bxs-star {
   margin-left: 3%;
@@ -179,8 +312,8 @@ img {
 }
 
 .movie-year{
-  padding-left: 40%;
-  font-weight: 300;
+  padding-left: 43%;
+  font-weight: 400;
 }
 
 .rating {
