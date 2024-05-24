@@ -78,20 +78,22 @@ form {
   margin-left: 49vw;
 }
 input {
-  height: 35px;
-  width: 0;
-  padding: 0 42px 0 15px;
-  border: none;
-  border-bottom: 2px solid transparent;
-  outline: none;
-  background: transparent;
-  transition: .4s cubic-bezier(0, 0.8, 0, 1);
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  color: white;
-  cursor: pointer;
+  height: 30px;
+    width: 0;
+    padding: 0 20px 0 1px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    margin-right: 15%;
+
 
 }
 input:focus {
