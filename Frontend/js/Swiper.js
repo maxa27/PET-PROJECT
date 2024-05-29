@@ -35,6 +35,7 @@ setTimeout(() => {
     wrapperClass: 'film-wrapperr',
     slideClass: 'film-slidee',
     direction: 'horizontal',
+    loop: true,
     spaceBetween: 25,
     slidesPerView: 5,
     mousewheel: {
@@ -50,6 +51,7 @@ setTimeout(() => {
     wrapperClass: 'film-wrapper',
     slideClass: 'film-slide',
     direction: 'horizontal',
+    loop: true,
     spaceBetween: 25,
     slidesPerView: 5,
     mousewheel: {

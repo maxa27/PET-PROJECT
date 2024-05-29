@@ -40,6 +40,7 @@ setTimeout(() => {
         direction: 'horizontal',
         spaceBetween: 20,
         slidesPerView: 6,
+        loop: true,
         mousewheel: {
             sensitivity: 3,
             eventsTarget: ".film-container"
