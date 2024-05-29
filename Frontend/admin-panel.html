@@ -1,206 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/admin-panel.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
-		<link rel="icon" type="image/png" href="../images/web-icon.ico" />
-		<title>Hexflix - Admin panel</title>
-	</head>
 
-	<body>
-		<aside>
-			<div class="head">
-				<div class="logo">
-					<img src="../images/web-icon.ico" alt="logo" />
-					<h2 class="logo-title">
-						<span><a href="../html/admin-panel.html">Admin</a></span>
-					</h2>
-				</div>
-				<i class="bx bx-menu hamburger-menu"></i>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/admin-panel.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="../images/web-icon.ico" />
+	<title>Hexflix - Admin panel</title>
+</head>
+
+<body>
+	<aside>
+		<div class="head">
+			<div class="logo">
+				<img src="images/web-icon.ico" alt="logo" />
+				<h2 class="logo-title">
+					<span><a href="admin-panel.html">Admin</a></span>
+				</h2>
+			</div>
+			<i class="bx bx-menu hamburger-menu"></i>
+		</div>
+
+		<div class="nav">
+			<div class="menu menu-add">
+				<i class="bx bx-video-plus"></i>
+				<span>Добавить</span>
 			</div>
 
-			<div class="nav">
-				<div class="menu menu-add">
-					<i class="bx bx-video-plus"></i>
-					<span>Добавить</span>
-				</div>
+			<div class="menu">
+				<i class="bx bx-edit"></i>
+				<span>Редактировать</span>
+			</div>
 
-				<div class="menu">
-					<i class="bx bx-edit"></i>
-					<span>Редактировать</span>
+			<div class="menu">
+				<i class="bx bx-group"></i>
+				<span>Состав</span>
+				<i class="bx bx-chevron-down"></i>
+			</div>
+			<div class="menu-dropdown">
+				<div class="sub-menu">
+					<span class="menu teamlid">Тимлид</span>
+					<span class="menu verstka">Верстальщик</span>
+					<span class="menu disigner">Дизайнер</span>
+					<span class="menu developer">Разработчик</span>
+					<span class="menu tester">Тестировщик</span>
+					<span class="menu all">Вся команда</span>
 				</div>
+			</div>
+		</div>
 
-				<div class="menu">
-					<i class="bx bx-group"></i>
-					<span>Состав</span>
-					<i class="bx bx-chevron-down"></i>
-				</div>
-				<div class="menu-dropdown">
-					<div class="sub-menu">
-						<span class="menu teamlid">Тимлид</span>
-						<span class="menu verstka">Верстальщик</span>
-						<span class="menu disigner">Дизайнер</span>
-						<span class="menu developer">Разработчик</span>
-						<span class="menu tester">Тестировщик</span>
-						<span class="menu all">Вся команда</span>
-					</div>
+		<div class="footer">
+			<div class="profile">
+				<img src="images/admin-avatar.jpg" alt="profile-logo" />
+				<div class="info">
+					<span class="name">Admin</span>
+					<span class="job">Frontend</span>
 				</div>
 			</div>
 
-			<div class="footer">
-				<div class="profile">
-					<img src="../images/admin-avatar.jpg" alt="profile-logo" />
-					<div class="info">
-						<span class="name">Admin</span>
-						<span class="job">Frontend</span>
-					</div>
-				</div>
+			<div class="menu menu-logout">
+				<a href="admin-panel-login.html">
+					<i class="bx bx-log-out"></i></a>
+				<span class="text-logout"><a href="admin-panel-login.html">Выйти</a></span>
+			</div>
+		</div>
+	</aside>
 
-				<div class="menu menu-logout">
-					<a href="../html/admin-panel-login.html">
-						<i class="bx bx-log-out"></i
-					></a>
-					<span class="text-logout"
-						><a href="../html/admin-panel-login.html">Выйти</a></span
-					>
+	<header>
+		<h1>ADMIN PANEL <br /><span class="header-text-admin">Hexflix</span></h1>
+	</header>
+
+	<main>
+		<form action=" " id="form">
+			<div class="panel-bg">
+				<div class="panel">
+					<p class="panel-text">Название</p>
+
+					<input class="panel-input" id="name" placeholder="Thor: Ragnarok" />
+					<span style="color: red" id="name_error"></span>
+
+					<p class="panel-text">Описание</p>
+					<textarea class="panel-description panel-input" id="description" rows="5" cols="48"
+						placeholder="Тор: Рагнарек (2017) - это американский фильм, основанный на персонаже Торе. Режиссер фильма - Тайка Вайтити ..."></textarea>
+					<span style="color: red" id="description_error"></span>
+
+					<!-- <input class="panel-input panel-description" type="text" /> -->
+
+					<p class="panel-text">Ссылка на фильм</p>
+					<input class="panel-input" id="link" placeholder="https://www.hexflix.ru/film/Thor-Ragnarok/" />
+					<span style="color: red" id="link_error"></span>
+					<!-- <input class="panel-input" type="text" /> -->
+
+					<p class="panel-text">Год, длительность, страна</p>
+					<input class="panel-input" id="extra-info" placeholder="2017, 130 мин, США" />
+					<span style="color: red" id="extra_info_error"></span>
+					<!-- <input class="panel-input" type="text" /> -->
+
+					<p class="panel-text">Жанр</p>
+					<input class="panel-input" id="genre" placeholder="фантастика" />
+					<span style="color: red" id="genre_error"></span>
+					<!-- <input class="panel-input" type="text" /> -->
+
+					<button class="panel-button button-submit" id="submit" type="submit">
+						Добавить фильм <i class="bx bx-movie"></i>
+					</button>
+					<button class="panel-button button-reset" type="reset">
+						Сбросить <i class="bx bx-reset"></i>
+					</button>
 				</div>
 			</div>
-		</aside>
+		</form>
 
-		<header>
-			<h1>ADMIN PANEL <br /><span class="header-text-admin">Hexflix</span></h1>
-		</header>
+		<div class="teams">
+			<p class="teams-text teamlid-text">
+				<a class="team-link" href="https://github.com/maxa27"><i class="bx bxl-github"></i>Хамидов Махмуд</a>
+			</p>
+			<p class="teams-text all-text">
+				<a href="https://github.com/maxa27" class="team-link"><i class="bx bxl-github"></i>Хамидов
+					Махмуд</a><br /><a href="https://github.com/fasunareuu" class="team-link"><i
+						class="bx bxl-github"></i>Куриленко Павел</a>
+				<br /><a href="https://github.com/vitalijk078" class="team-link"><i class="bx bxl-github"></i>Ковалёв
+					Виталий</a><br /><a href="https://github.com/T1mur11" class="team-link timur-link"><i
+						class="bx bxl-github"></i>Нигматуллин Тимур</a>
+				<br /><a href="https://github.com/dangervladi4ek" class="team-link"><i
+						class="bx bxl-github"></i>Вешкурцев Влад</a>
+			</p>
+			<p class="teams-text tester-text">
+				<a href="https://github.com/dangervladi4ek" class="team-link"><i class="bx bxl-github"></i>Вешкурцев
+					Влад</a>
+			</p>
+			<p class="teams-text verstka-text">
+				<a class="team-link" href="https://github.com/fasunareuu"><i class="bx bxl-github"></i>Куриленко Павел
+				</a>
+				<br />
+				<a href="https://github.com/vitalijk078" class="team-link"><i class="bx bxl-github"></i>Ковалёв
+					Виталий</a>
+			</p>
+			<p class="teams-text disigner-text">
+				<a href="https://github.com/vitalijk078" class="team-link"><i class="bx bxl-github"></i>Ковалёв
+					Виталий</a>
+				<br />
+				<a href="https://github.com/T1mur11" class="team-link"><i class="bx bxl-github"></i>Нигматуллин
+					Тимур</a>
+			</p>
+			<p class="teams-text developer-text">
+				<a class="team-link" href="https://github.com/maxa27"><i class="bx bxl-github"></i>Хамидов Махмуд</a>
+				<br />
+				<a href="https://github.com/fasunareuu" class="team-link"><i class="bx bxl-github"></i>Куриленко Павел
+				</a>
+				<br />
+				<a href="https://github.com/vitalijk078" class="team-link"><i class="bx bxl-github"></i>Ковалёв
+					Виталий</a>
+			</p>
+		</div>
+	</main>
 
-		<main>
-			<form action=" " id="form">
-				<div class="panel-bg">
-					<div class="panel">
-						<p class="panel-text">Название</p>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/adminPanelScript.js"></script>
+</body>
 
-						<input class="panel-input" id="name" placeholder="Thor: Ragnarok" />
-						<span style="color: red" id="name_error"></span>
-
-						<p class="panel-text">Описание</p>
-						<textarea
-							class="panel-description panel-input"
-							id="description"
-							rows="5"
-							cols="48"
-							placeholder="Тор: Рагнарек (2017) - это американский фильм, основанный на персонаже Торе. Режиссер фильма - Тайка Вайтити ..."
-						></textarea>
-						<span style="color: red" id="description_error"></span>
-
-						<!-- <input class="panel-input panel-description" type="text" /> -->
-
-						<p class="panel-text">Ссылка на фильм</p>
-						<input
-							class="panel-input"
-							id="link"
-							placeholder="https://www.hexflix.ru/film/Thor-Ragnarok/"
-						/>
-						<span style="color: red" id="link_error"></span>
-						<!-- <input class="panel-input" type="text" /> -->
-
-						<p class="panel-text">Год, длительность, страна</p>
-						<input
-							class="panel-input"
-							id="extra-info"
-							placeholder="2017, 130 мин, США"
-						/>
-						<span style="color: red" id="extra_info_error"></span>
-						<!-- <input class="panel-input" type="text" /> -->
-
-						<p class="panel-text">Жанр</p>
-						<input class="panel-input" id="genre" placeholder="фантастика" />
-						<span style="color: red" id="genre_error"></span>
-						<!-- <input class="panel-input" type="text" /> -->
-
-						<button
-							class="panel-button button-submit"
-							id="submit"
-							type="submit"
-						>
-							Добавить фильм <i class="bx bx-movie"></i>
-						</button>
-						<button class="panel-button button-reset" type="reset">
-							Сбросить <i class="bx bx-reset"></i>
-						</button>
-					</div>
-				</div>
-			</form>
-
-			<div class="teams">
-				<p class="teams-text teamlid-text">
-					<a class="team-link" href="https://github.com/maxa27"
-						><i class="bx bxl-github"></i>Хамидов Махмуд</a
-					>
-				</p>
-				<p class="teams-text all-text">
-					<a href="https://github.com/maxa27" class="team-link"
-						><i class="bx bxl-github"></i>Хамидов Махмуд</a
-					><br /><a href="https://github.com/fasunareuu" class="team-link"
-						><i class="bx bxl-github"></i>Куриленко Павел</a
-					>
-					<br /><a href="https://github.com/vitalijk078" class="team-link"
-						><i class="bx bxl-github"></i>Ковалёв Виталий</a
-					><br /><a
-						href="https://github.com/T1mur11"
-						class="team-link timur-link"
-						><i class="bx bxl-github"></i>Нигматуллин Тимур</a
-					>
-					<br /><a href="https://github.com/dangervladi4ek" class="team-link"
-						><i class="bx bxl-github"></i>Вешкурцев Влад</a
-					>
-				</p>
-				<p class="teams-text tester-text">
-					<a href="https://github.com/dangervladi4ek" class="team-link"
-						><i class="bx bxl-github"></i>Вешкурцев Влад</a
-					>
-				</p>
-				<p class="teams-text verstka-text">
-					<a class="team-link" href="https://github.com/fasunareuu"
-						><i class="bx bxl-github"></i>Куриленко Павел
-					</a>
-					<br />
-					<a href="https://github.com/vitalijk078" class="team-link"
-						><i class="bx bxl-github"></i>Ковалёв Виталий</a
-					>
-				</p>
-				<p class="teams-text disigner-text">
-					<a href="https://github.com/vitalijk078" class="team-link"
-						><i class="bx bxl-github"></i>Ковалёв Виталий</a
-					>
-					<br />
-					<a href="https://github.com/T1mur11" class="team-link"
-						><i class="bx bxl-github"></i>Нигматуллин Тимур</a
-					>
-				</p>
-				<p class="teams-text developer-text">
-					<a class="team-link" href="https://github.com/maxa27"
-						><i class="bx bxl-github"></i>Хамидов Махмуд</a
-					>
-					<br />
-					<a href="https://github.com/fasunareuu" class="team-link"
-						><i class="bx bxl-github"></i>Куриленко Павел
-					</a>
-					<br />
-					<a href="https://github.com/vitalijk078" class="team-link"
-						><i class="bx bxl-github"></i>Ковалёв Виталий</a
-					>
-				</p>
-			</div>
-		</main>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="../js/adminPanelScript.js"></script>
-	</body>
 </html>
