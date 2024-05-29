@@ -4,7 +4,7 @@ setTimeout(() => {
     effect: "coverflow",
     // grabCursor: true,
     // centredSlides: true,
-  
+
     loop: true,
     coverflowEffect: {
       rotate: 20,
@@ -27,7 +27,7 @@ setTimeout(() => {
       eventsTarget: ".swiper"
     }
   });
-}, 250)
+}, 200)
 
 setTimeout(() => {
   new Swiper(".film-containerr", {
@@ -35,7 +35,7 @@ setTimeout(() => {
     wrapperClass: 'film-wrapperr',
     slideClass: 'film-slidee',
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     spaceBetween: 25,
     slidesPerView: 5,
     mousewheel: {
@@ -51,7 +51,7 @@ setTimeout(() => {
     wrapperClass: 'film-wrapper',
     slideClass: 'film-slide',
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     spaceBetween: 25,
     slidesPerView: 5,
     mousewheel: {

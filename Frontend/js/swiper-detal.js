@@ -46,6 +46,6 @@ setTimeout(() => {
             eventsTarget: ".film-container"
         }
     });
-}, 500)
+}, 1500)
 
 

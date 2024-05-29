@@ -364,9 +364,6 @@ img {
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
  margin-left: 2%;
 }
 .film-slide{

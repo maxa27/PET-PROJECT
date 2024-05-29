@@ -42,7 +42,7 @@ export default function createRecommendedFilmsBlock({ results: movieList }, cont
     const nameFilm = document.createElement("span");
     nameFilm.classList.add("name-film");
     nameFilm.textContent =
-      title.length > 27 ? movie.title.substring(0, 25) + " . . ." : movie.title;
+      title.length > 24 ? movie.title.substring(0, 20) + " . . ." : movie.title;
 
     // Создаем элемент br
     const lineBreak = document.createElement("br");

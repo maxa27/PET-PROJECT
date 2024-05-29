@@ -442,10 +442,8 @@ body {
     display: flex;
     transition-property: transform;
     box-sizing: content-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 75%;
+    margin-left: 1%;
+    
   }
   .film-slide{
     flex-shrink: 0;
@@ -469,6 +467,7 @@ body {
     width: 93%;
     height: 58vh;
     border-radius: 20px;
+    
   }
 
 
@@ -480,15 +479,17 @@ body {
     display: flex;
     transition-property: transform;
     box-sizing: content-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 75%;
+    margin-left: 1%;
+    
+    
   }
   .film-slidee{
     flex-shrink: 0;
     transition-property: transform;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .film-containerr {
