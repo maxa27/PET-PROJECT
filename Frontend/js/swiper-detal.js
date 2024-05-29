@@ -15,29 +15,36 @@ new Swiper(".mySwiper", {
 //         eventsTarget: ".my-custom-swiper"
 //     },
 // });
-new Swiper(".trailers-container", {
+
+setTimeout(() => {
+    new Swiper(".trailers-container", {
     containerModifierClass: 'trailers-container',
     wrapperClass: 'trailers-wrappers',
     slideClass: 'trailers-slide',
     direction: 'horizontal',
-    slidesPerView: 3,
-    spaceBetween: 50,
+    slidesPerView: 5,
+    spaceBetween: 10,
     mousewheel: {
         sensitivity: 3,
         eventsTarget: ".trailers-wrappers"
     }
 });
+}, 1000)
 
-new Swiper(".film-container", {
-    containerModifierClass: 'film-container',
-    wrapperClass: 'film-wrapper',
-    slideClass: 'film-slide',
-    direction: 'horizontal',
-    spaceBetween: 20,
-    slidesPerView: 6,
-    mousewheel: {
-        sensitivity: 3,
-        eventsTarget: ".film-container"
-    }
-});
+
+setTimeout(() => {
+    new Swiper(".film-container", {
+        containerModifierClass: 'film-container',
+        wrapperClass: 'film-wrapper',
+        slideClass: 'film-slide',
+        direction: 'horizontal',
+        spaceBetween: 20,
+        slidesPerView: 6,
+        mousewheel: {
+            sensitivity: 3,
+            eventsTarget: ".film-container"
+        }
+    });
+}, 500)
+
 

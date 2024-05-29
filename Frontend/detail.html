@@ -25,16 +25,16 @@
         <a href="/index.html">
             <h1 class="name">HexFlix</h1>
         </a>
-        <a href="/pageWithFilms.html" class="but-head"> <button class="b1">Фильмы</button></a>
-        <a href="/pageWithFilms.html" class="but-head"> <button class="b2">Сериалы</button></a>
+        <a href="/pageWithFilms.html" class="but-head"> <button class="b1">Movies</button></a>
+        <a href="/pageWithFilms.html" class="but-head"> <button class="b2">Series</button></a>
         <form>
             <input type="text" placeholder="Искать здесь...">
             <div class="lupa"><img class="search" src="../images/searchh.png" alt="Scrach"></div>
         </form>
     </div>
 
-    <div class="movie-detail">
-        <div class="backdrop-image" style="background-image: url('/Frontend/images/bg(dark).jpg');"></div>
+    <div class="movie-detail" id="movie-detail">
+        <!-- <div class="backdrop-image" style="background-image: url('/Frontend/images/bg(dark).jpg');"></div>
 
         <figure class="poster-box movie-poster">
             <img src="images/1pi.jpg" alt="First check" class="img-cover">
@@ -92,37 +92,30 @@
 
 
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="title-wrapper">
         <h3 class="title-large">Trailers and Clips</h3>
     </div>
-    <!-- <div class="trailers my-custom-swiper swiper-container">
-        <div class="swiper-wrapper video-trailers wrapper">
-            <div class="swiper-slide slide video-card"><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
-            <div class="swiper-slide slide video-card"><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
-            <div class="swiper-slide slide video-card"><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
-            <div class="swiper-slide slide video-card"><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
-        </div>
-    </div> -->
 
+    
 
-
-    <div class="trailers-container">
-        <div class="trailers-wrappers ">
+    <div class="trailers-container" id="trailers-container">
+        <!-- <div class="trailers-wrappers ">
             <div class="trailers-slide "><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
             <div class="trailers-slide "><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
             <div class="trailers-slide "><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
             <div class="trailers-slide "><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
             <div class="trailers-slide "><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
             <div class="trailers-slide "><img class="imgv" src="../images/video.jpeg" alt="Movie 1"></div>
-        </div>
+        </div> -->
     </div>
 
 
-    <h3 class="title-large">Films</h3>
-    <div class="film-container">
-        <div class="film-wrapper">
+
+    <h3 class="title-large">You May Also Like</h3>
+    <div class="film-container" id="film-container">
+        <!-- <div class="film-wrapper">
             <div class="film-slide"><a href="#" class="plaque"><img class="imge" src="../images/thor-ragnarok.jpg"
                         alt="Movie 2"><span class="name-film">Figfddfgdfgdflm</span> <br><i class='bx bxs-star'
                         style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
@@ -188,7 +181,7 @@
                         alt="Movie 1"><span class="name-film">Film</span><br><i class='bx bxs-star'
                         style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
             </div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -222,5 +215,8 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/swiper-detal.js"></script>
+<script src="./js/detail.js" type="module"></script>
+<script src="./js/getRecommendedMoviesForDeatilPage.js" type="module"></script>
+
 
 </html>

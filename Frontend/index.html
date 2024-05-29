@@ -25,18 +25,18 @@
                   <a href="/index.html">
                         <h1 class="name">HexFlix</h1>
                   </a>
-                  <a href="/pageWithFilms.html" class="but-head"> <button class="b1">Фильмы</button></a>
-                  <a href="/pageWithFilms.html" class="but-head"> <button class="b2">Сериалы</button></a>
+                  <a href="/pageWithFilms.html" class="but-head"> <button class="b1">Movies</button></a>
+                  <a href="/pageWithFilms.html" class="but-head"> <button class="b2">Series</button></a>
                   <form>
                         <input type="text" placeholder="Искать здесь...">
-                        <div class="lupa"><img class="search" src="../images/searchh.png" alt="Scrach"></div>
+                        <div class="lupa"><img class="search" src="../images/searchh.png" alt="Search"></div>
                   </form>
 
             </div>
 
 
-            <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
+            <div class="swiper mySwiper" id="swiper">
+                  <!-- <div class="swiper-wrapper">
                         <div class="swiper-slide"><a href="detail.html" class="plaque-button"> <img class="img1"
                                           src="../images/1pi.jpg" alt="Movie 1"> </div>
                         <div class="swiper-slide"><a href="#" class="plaque-button"><img class="img2"
@@ -62,52 +62,52 @@
                         <div class="swiper-slide"><a href="#" class="plaque-button"><img class="img3"
                                           src="../images/3pi.jpg" alt="Movie 3"></a></div>
 
-                  </div>
+                  </div> -->
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
             </div>
-            <h2 class="h2">Жанры</h2>
+            <h2 class="h2">Genres</h2>
             <div class="genres">
+<!-- 
 
-
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Боевики</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Action"><button class="plaque-button">
+                                    <h2 class="plaque-text">Action</h2>
                               </button></a></div>
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Драммы</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Drama"><button class="plaque-button">
+                                    <h2 class="plaque-text">Drama</h2>
                               </button></a></div>
 
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Спорт</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Comedy"><button class="plaque-button">
+                                    <h2 class="plaque-text">Comedy</h2>
                               </button></a></div>
                   </a>
 
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Триллеры</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Thriller"><button class="plaque-button">
+                                    <h2 class="plaque-text">Thriller</h2>
                               </button></a></div>
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Детективы</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Crime"><button class="plaque-button">
+                                    <h2 class="plaque-text">Crime</h2>
                               </button></a></div>
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Фантастика</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Fantasy"><button class="plaque-button">
+                                    <h2 class="plaque-text">Fantasy</h2>
                               </button></a></div>
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Дорамы</h2>
-                              </button></a></div>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=Horror"><button class="plaque-button">
+                                    <h2 class="plaque-text">Horror</h2>
+                              </button></a></div> -->
 
-                  <div class="genre"><a href="/pageWithFilms.html"><button class="plaque-button">
-                                    <h2 class="plaque-text">Мультики</h2>
+                  <div class="genre"><a href="/pageWithFilms.html?genre=16"><button class="plaque-button">
+                                    <h2 class="plaque-text">Сartoon</h2>
                               </button></a></div>
 
             </div>
-            <h2 class="h22">Фильмы</h2>
+            <h2 class="h22">Top Rated Movies</h2>
             <!-- <div class="movies_end">
       <a href="#" class="plaque"><img class="imge" src="../images/3pi.jpg" alt="Movie 2"></a>
       <a href="#" class="plaque"><img class="imge" src="../images/1ppi.jpg" alt="Movie 1"></a>
@@ -125,9 +125,8 @@
       <a href="#" class="plaque"><img class="imge" src="../images/5pi.jpg" alt="Movie 2"></a>
 
     </div> -->
-            <div class="movies_end">
-                  <div class="film-container">
-                        <div class="film-wrapper">
+                  <div class="film-container" id="film-container">
+                        <!-- <div class="film-wrapper">
                               <div class="film-slide"><a href="#" class="plaque"><img class="imge"
                                                 src="../images/thor-ragnarok.jpg" alt="Movie 2"><span
                                                 class="name-film">FILM</span> <br><i class='bx bxs-star'
@@ -188,64 +187,63 @@
                                                 class="name-film">FILM</span> <br><i class='bx bxs-star'
                                                 style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                               </div>
-                        </div>
+                        </div> -->
                   </div>
 
-            </div>
-            <h2 class="h22">Фильмы</h2>
-            <div class="film-containerr">
-                  <div class="film-wrapperr">
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee"
+            <h2 class="h22">This Week Trending Movies</h2>
+            <div class="film-containerr" id="film-containerr">
+                  <!-- <div class="film-wrapperr">
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge"
                                           src="../images/thor-ragnarok.jpg" alt="Movie 2"><span
                                           class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/thor.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/thor.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imgee"
+                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imge"
                                           src="../images/thor2.jpg" alt="Movie 1"><span class="name-film">FILM</span>
                                     <br><i class='bx bxs-star' style='color:#ffd400'></i>5.0 <span
                                           class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/3pi.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/3pi.jpg"
                                           alt="Movie 2"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/1ppi.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/1ppi.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imgee" src="../images/2pi.jpg"
+                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imge" src="../images/2pi.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/3pi.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/3pi.jpg"
                                           alt="Movie 2"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/1ppi.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/1ppi.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imgee" src="../images/2pi.jpg"
+                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imge" src="../images/2pi.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/3pi.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/3pi.jpg"
                                           alt="Movie 2"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"><a href="#" class="plaque"><img class="imgee" src="../images/1ppi.jpg"
+                        <div class="film-slidee"><a href="#" class="plaque"><img class="imge" src="../images/1ppi.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imgee" src="../images/2pi.jpg"
+                        <div class="film-slidee"> <a href="#" class="plaque"><img class="imge" src="../images/2pi.jpg"
                                           alt="Movie 1"><span class="name-film">FILM</span> <br><i class='bx bxs-star'
                                           style='color:#ffd400'></i>5.0 <span class="year-film">2020</span></a>
                         </div>
-                  </div>
+                  </div> -->
             </div>
 
       </div>
@@ -276,7 +274,11 @@
             </div>
       </footer>
 </body>
+<script src="../js/getPopularMovies.js" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/Swiper.js"></script>
+<script src="../js/searchByGenre.js" type="module"></script>
+<script src="../js/createMainPageMovieList.js" type="module"></script>
+
 
 </html>
