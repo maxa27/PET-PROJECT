@@ -203,8 +203,27 @@ function getTrailers(movie) {
 for (const { key, name } of filterVideos(videos)) {
   const trailersSlide = document.createElement("div");
   trailersSlide.classList.add("trailers-slide");
+  const link = document.createElement("a");
+  link.target = "_blank";
+  link.href = `https://www.youtube.com/embed/${key}?theme=dark&color=white&rel=0`;
 
-  trailersSlide.innerHTML = `<iframe width="350" height="200" src="https://www.youtube.com/embed/${key}?theme=dark&color=white&rel=0" frameborder="0" allowfullscreen="1" title="${name}" class="imgv" loading="lazy"></iframe>`;
+  const video = document.createElement("iframe");
+    video.src = `https://www.youtube.com/embed/${key}?theme=dark&color=white&rel=0`;
+    video.classList.add("video-slide");
+    video.width = "270";
+    video.height = "200";
+    video.frameBorder = "0";
+    video.allowFullscreen = true;
+    video.style.pointerEvents = "none";
+    video.title = name;
+    video.classList.add("imgv");
+    video.loading = "lazy";
+
+    link.appendChild(video);
+    trailersSlide.appendChild(link);
+
+
+  // trailersSlide.innerHTML = `<iframe width="350" height="200" src="https://www.youtube.com/embed/${key}?theme=dark&color=white&rel=0" frameborder="0" allowfullscreen="1" title="${name}" class="imgv" loading="lazy"></iframe>`;
 
   trailersWrappers.appendChild(trailersSlide);
 }

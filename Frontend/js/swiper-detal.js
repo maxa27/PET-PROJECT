@@ -18,18 +18,18 @@ new Swiper(".mySwiper", {
 
 setTimeout(() => {
     new Swiper(".trailers-container", {
-    containerModifierClass: 'trailers-container',
-    wrapperClass: 'trailers-wrappers',
-    slideClass: 'trailers-slide',
-    direction: 'horizontal',
-    slidesPerView: 5,
-    spaceBetween: 10,
-    mousewheel: {
-        sensitivity: 3,
-        eventsTarget: ".trailers-wrappers"
-    }
-});
-}, 1000)
+        containerModifierClass: 'trailers-container',
+        wrapperClass: 'trailers-wrappers',
+        slideClass: 'trailers-slide',
+        direction: 'horizontal',
+        slidesPerView: 5,
+        spaceBetween: 10,
+        mousewheel: {
+            sensitivity: 3,
+            eventsTarget: ".trailers-wrappers"
+        }
+    });
+}, 2000)
 
 
 setTimeout(() => {

@@ -330,6 +330,7 @@ img {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  pointer-events: all;
   align-items: center;
   margin-left: 4%;
 }
