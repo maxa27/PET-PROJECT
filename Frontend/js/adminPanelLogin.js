@@ -1,42 +1,21 @@
-document.querySelector("form").addEventListener('click', (e) => {
-  let email = document.getElementById("login").value;
-  let password = document.getElementById("password").value;
+const showHiddenInput = (inputOverlay, inputPass, inputIcon) => {
+	const overlay = document.getElementById(inputOverlay),
+		input = document.getElementById(inputPass),
+		iconEye = document.getElementById(inputIcon)
 
-  const fields = [
-    {
-      id: "login",
-      errorId: "login_error",
-      message: "Логин обязателен для заполнения",
-    },
-    {
-      id: "password",
-      errorId: "password_error",
-      message: "Пароль обязателен для заполнения",
-    }
-  ];
+	iconEye.addEventListener('click', () => {
+		if (input.type === 'password') {
+			input.type = 'text'
 
-  let isValid = true;
+			iconEye.classList.add('bx-show')
+		} else {
+			input.type = 'password'
 
-  fields.forEach((field) => {
-    const value = document.querySelector(`#${field.id}`).value;
-    const error = document.querySelector(`#${field.errorId}`);
+      iconEye.classList.remove('bx-show')
+		}
 
-    if (value === "" || value === null) {
-      e.preventDefault();
-      error.innerHTML = field.message;
-      isValid = false;
-    } else {
-      error.innerHTML = "";
-    }
-  });
+    overlay.classList.toggle('overlay-content')
+	})
+}
 
-  if (isValid) {
-    // Проверка логина и пароля
-    if (email === "admin@mail.ru" && password === "adminPanel52") {
-      window.location.href = "admin-panel-test.html";
-    } else {
-      alert("Неправильный логин или пароль!");
-    }
-  }
-
-})
+showHiddenInput('input-overlay', 'input-pass', 'input-icon')
